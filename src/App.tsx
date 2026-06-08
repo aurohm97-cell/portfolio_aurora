@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import '../src/i18n/index'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
+import Projects from './sections/Projects'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -19,6 +20,7 @@ function App() {
       <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
       <main style={{ paddingTop: '80px' }}>
         <Hero />
+        <Projects />
       </main>
     </div>
   )

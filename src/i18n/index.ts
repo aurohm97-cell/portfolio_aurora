@@ -18,6 +18,11 @@ const resources = {
         cta_projects: 'Ver proyectos',
         cta_contact: 'Contacta conmigo',
       },
+
+      projects: {
+  trello_subtitle: 'Trello Clone',
+  trello_description: 'Aplicación de gestión de tareas con tableros al estilo Trello. Incluye autenticación, registro, drag & drop, prioridades y CRUD completo de tareas.',
+},
     }
   },
   en: {
@@ -36,6 +41,11 @@ const resources = {
         cta_projects: 'View projects',
         cta_contact: 'Get in touch',
       },
+
+      projects: {
+  trello_subtitle: 'Trello Clone',
+  trello_description: 'Task management app with Trello-style boards. Features authentication, registration, drag & drop, priorities and full task CRUD.',
+},
     }
   },
   fr: {
@@ -54,6 +64,10 @@ const resources = {
         cta_projects: 'Voir les projets',
         cta_contact: 'Me contacter',
       },
+      projects: {
+  trello_subtitle: 'Clone de Trello',
+  trello_description: 'Application de gestion de tâches avec des tableaux style Trello. Inclut authentification, inscription, drag & drop, priorités et CRUD complet.',
+},
     }
   }
 }
