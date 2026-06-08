@@ -29,9 +29,9 @@ function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
       alignItems: 'center',
       transition: 'background-color 0.3s ease',
     }}>
-      <span style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--primary)' }}>
-        Aurora
-      </span>
+      <a href="#" style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--primary)', textDecoration: 'none', cursor: 'pointer' }}>
+  AHM
+</a>
 
       <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
         {['about', 'projects', 'education', 'experience', 'contact'].map(section => (
