@@ -25,7 +25,7 @@ function App() {
       <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
       <main style={{ paddingTop: '80px' }}>
         <Hero />
-        <About />
+        <About darkMode={darkMode} />
         <Projects />
         <Education />
         <Experience />
