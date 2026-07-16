@@ -1,14 +1,21 @@
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BsMoonStarsFill, BsSunFill } from 'react-icons/bs'
 import { MdLanguage } from 'react-icons/md'
+import { HiMenu, HiX } from 'react-icons/hi'
 
 interface NavbarProps {
   darkMode: boolean
   toggleDarkMode: () => void
 }
 
+const SECTIONS = ['about', 'projects', 'education', 'experience', 'contact']
+const LANGS = ['es', 'en', 'fr']
+
 function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
   const { t, i18n } = useTranslation()
+  const [menuOpen, setMenuOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang)

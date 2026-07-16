@@ -87,7 +87,7 @@ function Hero() {
             transform: visible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s',
           }}>
-            Aurora <span style={{ color: 'var(--primary)' }}>[Apellido]</span>
+            Aurora <span style={{ color: 'var(--primary)' }}>Hernández</span>
           </h1>
 
           <h2 style={{
