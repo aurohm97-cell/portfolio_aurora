@@ -1,61 +1,17 @@
+import { useTranslation } from 'react-i18next'
+
 interface EducationItem {
   title: string
   institution: string
   period: string
 }
 
-const FEATURED: EducationItem[] = [
-  {
-    title: 'FPGS DAW - Desarrollo de Aplicaciones Web',
-    institution: 'Ilerna Online',
-    period: '2024 - 07/2026',
-  },
-{
-    title: 'Certificado de Profesionalidad - Operaciones Auxiliares de Montaje y Mantenimiento de Sistemas Microinformáticos',
-    institution: 'Junta de Andalucía · I.E.S. Luis Carrillo de Sotomayor, Baena',
-    period: 'Marzo - Junio 2026'
-  },
-  {
-    title: 'FPGS Guía, Información y Asistencia Turística',
-    institution: 'I.E.S. Cánovas del Castillo, Málaga',
-    period: '2015 - 2017',
-  },
-  {
-    title: 'FPGS Agencia de Viajes y Gestión de Eventos',
-    institution: 'I.E.S. La Rosaleda, Málaga',
-    period: '2017 - 2019',
-  },
-  {
-    title: 'Marketing Digital',
-    institution: 'Generation Spain y Fundación Incyde',
-    period: '2019',
-  },
-  {
-    title: 'Bachillerato',
-    institution: 'EE.PP. Sagrada Familia, Baena',
-    period: '2013 - 2015',
-  },
-]
-
-const COMPLEMENTARY: EducationItem[] = [
-  {
-    title: 'Socorrista en instalaciones acuáticas y DEA',
-    institution: 'Global Autoprotect',
-    period: '2015',
-  },
-  {
-    title: 'Administrativo (50h)',
-    institution: 'Diputación de Granada',
-    period: '2024',
-  },
-  {
-    title: 'Autodidacta',
-    institution: 'Creando mi portfolio con ayuda de la IA',
-    period: 'Actualidad',
-  },
-]
-
 function Education() {
+  const { t } = useTranslation()
+
+  const featured = t('education.featured', { returnObjects: true }) as EducationItem[]
+  const complementaryItems = t('education.complementaryItems', { returnObjects: true }) as EducationItem[]
+
   return (
     <section id="education" style={{
       minHeight: '100vh',
@@ -70,7 +26,7 @@ function Education() {
           color: 'var(--text)',
           marginBottom: '0.5rem',
         }}>
-          Formación
+          {t('nav.education')}
         </h2>
         <div style={{
           width: '60px',
@@ -87,7 +43,7 @@ function Education() {
           gap: '1.5rem',
           marginBottom: '3.5rem',
         }}>
-          {FEATURED.map((item, i) => (
+          {featured.map((item, i) => (
             <div key={i} style={{
               backgroundColor: 'var(--bg)',
               borderRadius: '16px',
@@ -138,11 +94,11 @@ function Education() {
           textTransform: 'uppercase',
           letterSpacing: '0.05em',
         }}>
-          Formación complementaria
+          {t('education.complementary')}
         </h3>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          {COMPLEMENTARY.map((item, i) => (
+          {complementaryItems.map((item, i) => (
             <div key={i} style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -150,7 +106,7 @@ function Education() {
               flexWrap: 'wrap',
               gap: '0.5rem',
               padding: '0.75rem 0',
-              borderBottom: i === COMPLEMENTARY.length - 1 ? 'none' : '1px solid var(--bg)',
+              borderBottom: i === complementaryItems.length - 1 ? 'none' : '1px solid var(--bg)',
             }}>
               <div>
                 <span style={{

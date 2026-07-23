@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
-import avatar from '../assets/avatar.svg'
+import heroLight from '../assets/hero-light.jpg'
+import heroDark from '../assets/hero-dark.png'
 import { PiSparkle } from 'react-icons/pi'
 
 function Hero() {
