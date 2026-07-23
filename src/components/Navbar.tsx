@@ -8,7 +8,7 @@ interface NavbarProps {
   toggleDarkMode: () => void
 }
 
-const SECTIONS = ['about', 'projects', 'education', 'experience', 'contact']
+const SECTIONS = ['about', 'projects', 'skills', 'education', 'experience', 'contact']
 const LANGS = ['es', 'en', 'fr']
 
 function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {

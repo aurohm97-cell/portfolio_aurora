@@ -1,10 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
-import heroLight from '../assets/hero-light.jpg'
+import heroLight from '../assets/hero-light-good.png'
 import heroDark from '../assets/hero-dark.png'
 import { PiSparkle } from 'react-icons/pi'
 
-function Hero() {
+interface HeroProps {
+  darkMode: boolean
+}
+
+function Hero({ darkMode }: HeroProps) {
   const { t } = useTranslation()
   const [displayed, setDisplayed] = useState('')
   const [visible, setVisible] = useState(false)
@@ -187,13 +191,13 @@ function Hero() {
             height: '320px',
             borderRadius: '50%',
             overflow: 'hidden',
-            border: '4px solid var(--primary)',
-            backgroundColor: 'var(--bg-secondary)',
+            border: darkMode ? 'none' : '4px solid var(--primary)',
+            backgroundColor: darkMode ? 'transparent' : 'var(--bg-secondary)',
             animation: 'float 4s ease-in-out infinite',
           }}>
             <img
-              src={avatar}
-              alt="Aurora avatar"
+              src={darkMode ? heroDark : heroLight}
+              alt="Aurora Hernández"
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>

@@ -3,6 +3,7 @@ import '../src/i18n/index'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
+import Skills from './sections/Skills'
 import About from './sections/About'
 import Education from './sections/Education'
 import Experience from './sections/Experience'
@@ -24,9 +25,10 @@ function App() {
     <div style={{ backgroundColor: 'var(--bg)', color: 'var(--text)', minHeight: '100vh' }}>
       <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
       <main style={{ paddingTop: '80px' }}>
-        <Hero />
+        <Hero darkMode={darkMode} />
         <About darkMode={darkMode} />
         <Projects />
+        <Skills />
         <Education />
         <Experience />
         <Contact />

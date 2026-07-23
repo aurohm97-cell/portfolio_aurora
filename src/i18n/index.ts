@@ -7,6 +7,7 @@ const resources = {
       nav: {
         about: 'Sobre mí',
         projects: 'Proyectos',
+        skills: 'Habilidades',
         education: 'Formación',
         experience: 'Experiencia',
         contact: 'Contacto',
@@ -80,7 +81,15 @@ contact: {
   email: 'aurohm97@gmail.com',
   location: 'Baena, Córdoba',
 },
-
+skills: {
+  languages_title: 'Idiomas',
+  tech_title: 'Tecnologías',
+  languages: [
+    { name: 'Español', level: 'Nativo' },
+    { name: 'Inglés', level: 'Fluido — B1 acreditado' },
+    { name: 'Francés', level: 'Fluido' },
+  ],
+},
     }
   },
   en: {
@@ -88,6 +97,7 @@ contact: {
       nav: {
         about: 'About me',
         projects: 'Projects',
+        skills: 'Skills',
         education: 'Education',
         experience: 'Experience',
         contact: 'Contact',
@@ -164,6 +174,15 @@ contact: {
   email: 'aurohm97@gmail.com',
   location: 'Baena, Córdoba (Spain)',
 },
+skills: {
+  languages_title: 'Languages',
+  tech_title: 'Technologies',
+  languages: [
+    { name: 'Spanish', level: 'Native' },
+    { name: 'English', level: 'Fluent — B1 certified' },
+    { name: 'French', level: 'Fluent' },
+  ],
+},
     }
   },
   fr: {
@@ -171,6 +190,7 @@ contact: {
       nav: {
         about: 'À propos',
         projects: 'Projets',
+        skills: 'Compétences',
         education: 'Formation',
         experience: 'Expérience',
         contact: 'Contact',
@@ -245,6 +265,15 @@ contact: {
   phone: '614459376',
   email: 'aurohm97@gmail.com',
   location: 'Baena, Córdoba (Espagne)',
+},
+skills: {
+  languages_title: 'Langues',
+  tech_title: 'Technologies',
+  languages: [
+    { name: 'Espagnol', level: 'Langue maternelle' },
+    { name: 'Anglais', level: 'Courant — B1 certifié' },
+    { name: 'Français', level: 'Courant' },
+  ],
 },
     } 
   }
