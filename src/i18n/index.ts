@@ -86,8 +86,8 @@ skills: {
   tech_title: 'Tecnologías',
   languages: [
     { name: 'Español', level: 'Nativo' },
-    { name: 'Inglés', level: 'Fluido — B1 acreditado' },
-    { name: 'Francés', level: 'Fluido' },
+    { name: 'Inglés', level: 'Certificado B1 (Trinity) — nivel conversacional superior por experiencia profesional' },
+  { name: 'Francés', level: 'Nivel conversacional fluido por experiencia profesional' },
   ],
 },
     }
@@ -179,8 +179,8 @@ skills: {
   tech_title: 'Technologies',
   languages: [
     { name: 'Spanish', level: 'Native' },
-    { name: 'English', level: 'Fluent — B1 certified' },
-    { name: 'French', level: 'Fluent' },
+    { name: 'English', level: 'B1 certified (Trinity) — higher conversational level through professional experience' },
+    { name: 'French', level: 'Fluent conversational level through professional experience' },
   ],
 },
     }
@@ -271,8 +271,8 @@ skills: {
   tech_title: 'Technologies',
   languages: [
     { name: 'Espagnol', level: 'Langue maternelle' },
-    { name: 'Anglais', level: 'Courant — B1 certifié' },
-    { name: 'Français', level: 'Courant' },
+    { name: 'Anglais', level: 'Certifié B1 (Trinity) — niveau conversationnel supérieur grâce à l\'expérience professionnelle' },
+    { name: 'Français', level: 'Niveau conversationnel courant grâce à l\'expérience professionnelle' },
   ],
 },
     } 

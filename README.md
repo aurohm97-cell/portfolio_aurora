@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+# AHM Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal de Aurora Hernández, Frontend Developer. Construido con React, TypeScript y Tailwind, con soporte multi-idioma y modo oscuro.
 
-Currently, two official plugins are available:
+![Vista previa del portfolio](src/assets/hero.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Demo en vivo:** [project-v3yxp.vercel.app](https://project-v3yxp.vercel.app/)
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** + **TypeScript**
+- **Vite** como bundler
+- **Tailwind CSS v4**
+- **react-i18next** — contenido disponible en Español, Inglés y Francés
+- **GSAP** — animaciones al hacer scroll
+- **react-icons** — iconografía de tecnologías y redes
 
-## Expanding the ESLint configuration
+## Características
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌗 Modo claro / oscuro con paleta de colores propia
+- 🌍 Selector de idioma (ES / EN / FR)
+- 📱 Diseño responsive (navegación adaptada a mobile con menú hamburguesa)
+- ✨ Animaciones de entrada y scroll con GSAP
+- 🗂️ Secciones: Sobre mí, Proyectos, Habilidades, Formación, Experiencia y Contacto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Instalación local
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/aurohm97-cell/portfolio_aurora.git
+cd portfolio_aurora
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Despliegue
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Desplegado en **Vercel**, con integración continua desde la rama principal del repositorio.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Contacto
+
+¿Quieres saber más sobre este proyecto o sobre mí? Visita la sección de contacto en el propio portfolio.
