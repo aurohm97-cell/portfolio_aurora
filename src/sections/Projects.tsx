@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { SiAngular, SiTypescript, SiFirebase } from 'react-icons/si'
 import { FiExternalLink, FiGithub, FiBookOpen } from 'react-icons/fi'
+import { SiReact, SiTailwindcss } from 'react-icons/si'
 
 function Projects() {
   const { t } = useTranslation()
@@ -19,6 +20,20 @@ function Projects() {
       github: 'https://github.com/aurohm97-cell/agenda_aurora',
       readme: 'https://github.com/aurohm97-cell/agenda_aurora#readme',
     }
+    ,{
+  name: 'AHM Portfolio',
+  subtitle: t('projects.portfolio_subtitle'),
+  description: t('projects.portfolio_description'),
+  techs: [
+    { icon: <SiReact color="#61DAFB" />, name: 'React' },
+    { icon: <SiTypescript color="#3178C6" />, name: 'TypeScript' },
+    { icon: <SiTailwindcss color="#06B6D4" />, name: 'Tailwind' },
+  ],
+  demo: 'https://project-v3yxp.vercel.app/',
+  github: 'https://github.com/aurohm97-cell/portfolio_aurora',
+  readme: 'https://github.com/aurohm97-cell/portfolio_aurora#readme',
+},
+
   ]
 
   return (

@@ -36,6 +36,9 @@ tree_understand: 'Entender',
       projects: {
   trello_subtitle: 'Trello Clone',
   trello_description: 'Aplicación de gestión de tareas con tableros al estilo Trello. Incluye autenticación, registro, drag & drop, prioridades y CRUD completo de tareas.',
+  portfolio_subtitle: 'Portfolio personal',
+  portfolio_description: 'Si quieres saber cómo he construido este portfolio, mira aquí',
+
 }, education: {
   complementary: 'Formación complementaria',
   featured: [
@@ -127,6 +130,9 @@ tree_understand: 'Understand',
       projects: {
   trello_subtitle: 'Trello Clone',
   trello_description: 'Task management app with Trello-style boards. Features authentication, registration, drag & drop, priorities and full task CRUD.',
+  portfolio_subtitle: 'Personal Portfolio',
+  portfolio_description: 'If you want to see how I built this portfolio, take a look here',
+
 },
 education: {
   complementary: 'Additional training',
@@ -220,6 +226,9 @@ tree_understand: 'Comprendre',
       projects: {
   trello_subtitle: 'Clone de Trello',
   trello_description: 'Application de gestion de tâches avec des tableaux style Trello. Inclut authentification, inscription, drag & drop, priorités et CRUD complet.',
+portfolio_subtitle: 'Portfolio personnel',
+portfolio_description: "Si tu veux voir comment j'ai construit ce portfolio, jette un œil ici",
+
 }, education: {
   complementary: 'Formation complémentaire',
   featured: [
