@@ -40,9 +40,8 @@ function About({ darkMode }: AboutProps) {
   }, [])
 
   return (
-    <section id="about" style={{
+    <section id="about" className="px-6 py-16 md:px-16 md:py-24" style={{
       minHeight: '100vh',
-      padding: '6rem 4rem',
       backgroundColor: 'var(--bg)',
       display: 'flex',
       alignItems: 'center',
@@ -66,12 +65,7 @@ function About({ darkMode }: AboutProps) {
           marginBottom: '3rem',
         }} />
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '4rem',
-          alignItems: 'center',
-        }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <h3 style={{

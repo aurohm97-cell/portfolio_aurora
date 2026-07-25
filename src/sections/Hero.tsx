@@ -30,13 +30,12 @@ function Hero({ darkMode }: HeroProps) {
   }, [fullText])
 
   return (
-    <section id="hero" style={{
+    <section id="hero" className="px-6 md:px-16" style={{
       position: 'relative',
       minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '0 4rem',
       backgroundColor: 'var(--bg)',
     }}>
     { <><svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none' }} xmlns="http://www.w3.org/2000/svg">
@@ -54,16 +53,14 @@ function Hero({ darkMode }: HeroProps) {
       <span style={{ position: 'absolute', bottom: '35%', right: '12%', fontFamily: 'monospace', fontSize: '0.75rem', color: 'var(--accent)', opacity: 0.15, pointerEvents: 'none' }}>useState()</span></>
 
     }
-      <div style={{
+      <div className="flex flex-col md:flex-row gap-10 md:gap-16" style={{
         maxWidth: '1100px',
         width: '100%',
-        display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        gap: '4rem',
       }}>
 
-        <div style={{
+        <div className="text-center md:text-left items-center md:items-start" style={{
           display: 'flex',
           flexDirection: 'column',
           gap: '1.5rem',
@@ -127,7 +124,7 @@ function Hero({ darkMode }: HeroProps) {
             {t('hero.subtitle')}
           </p>
 
-          <div style={{
+          <div className="justify-center md:justify-start" style={{
             display: 'flex',
             gap: '1rem',
             marginTop: '0.5rem',
@@ -186,9 +183,7 @@ function Hero({ darkMode }: HeroProps) {
           transform: visible ? 'translateY(0)' : 'translateY(30px)',
           transition: 'opacity 1s ease 0.5s, transform 1s ease 0.5s',
         }}>
-          <div style={{
-            width: '320px',
-            height: '320px',
+          <div className="w-[220px] h-[220px] md:w-[320px] md:h-[320px]" style={{
             borderRadius: '50%',
             overflow: 'hidden',
             border: darkMode ? 'none' : '4px solid var(--primary)',

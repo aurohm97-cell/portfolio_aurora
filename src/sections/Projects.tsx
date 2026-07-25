@@ -37,9 +37,10 @@ function Projects() {
   ]
 
   return (
-    <section id="projects" style={{
+    <section id="projects" className="px-6 md:px-16 md:py-24" style={{
       minHeight: '100vh',
-      padding: '6rem 4rem',
+      paddingTop: '4rem',
+    paddingBottom: '6rem',
       backgroundColor: 'var(--bg-secondary)',
     }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
